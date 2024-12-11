@@ -16,21 +16,35 @@
 - Node.js 20.18.0
 - Python 3.13
 
-## プロジェクト構成
+## プロジェクト構成 ※未
 
 ````
 .
 ├── TEAM8-SECTION7/
-│   ├── .github/          # GitHub Actions設定
-│   ├── .vscode/          # VS Code設定
-│   ├── backend/          # Djangoアプリケーション
-│   ├── docker/           # Dockerファイル
-│   ├── docs/             # プロジェクトドキュメント
-│   ├── frontend/         # Next.jsアプリケーション
-│   ├── .gitignore       # Git除外設定
-│   ├── docker-compose.yml
-│   ├── README.md
-│   └── yml              # その他の設定ファイル```
+│ ├── .github/          # GitHub Actions設定
+│ │   ├── ISSUE_TEMPLATE              # テンプレート
+│ │   ├── workflows                   # gitworkflow
+│ │   └── pull_request_template.md    # プルリクエストテンプレート
+│ ├── .vscode/          # VS Code設定
+│ ├── backend/          # Djangoアプリケーション
+│ │   ├── config              # 設定用ファイル
+│ │   ├── todo                # アプリケーション
+│ │   ├── Dockerfile             # backend用Dockerfile
+│ │   ├── manage.py              #
+│ │   ├── pytest.ini             #
+│ │   └── requirements.txt       # backend用パッケージ情報
+│ ├── docker/           # Docker設定
+│ ├── docs/             # プロジェクトドキュメント
+│ │   ├── api
+│ │   │   └── endpoint           # endpoint API
+│ │   ├── README.md              # docs説明
+│ │   └── specification.md       # api設計書概要
+│ ├── frontend/         # Next.jsアプリケーション
+│ ├── .gitignore       # Git除外設定
+│ ├── docker-compose.yml
+│ ├── README.md
+│ └── yml              # その他の設定ファイル
+```
 
 ## セットアップ手順
 
